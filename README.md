@@ -8,7 +8,7 @@
 </p>
 
 ## 📖 About
-<p>Application using the Star Wars API to bring a list of characters and movies. Created with Vue.js.</p>
+<p>Multi page application using the Star Wars API to bring a list of characters, movies, species and planets. Created with Vue.js.</p>
 
 ---
 
