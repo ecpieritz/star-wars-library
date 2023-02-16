@@ -28,6 +28,7 @@ export default {
   position: fixed;
   top: 0;
   z-index: 2;
+  background-color: $sw-black;
 
   div {
     padding: 20px 120px;
