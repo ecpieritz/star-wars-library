@@ -16,6 +16,9 @@
 - HTML
 - Javascript
 - Vue.js
+  - Router
+- SASS/SCSS
+- Axios
 - ApexCharts
 
 ---
