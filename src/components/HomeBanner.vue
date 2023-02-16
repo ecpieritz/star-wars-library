@@ -28,5 +28,12 @@ export default {
 }
 </script>
   
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.sw-home-banner{
+  margin-top: 14vh;
+  @media(max-width:450px){
+    margin-top: 19vh;
+  }
+}
+</style>
   
