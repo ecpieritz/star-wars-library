@@ -12,8 +12,17 @@ p{
     font-size: 20px;
 }
 
-
 .container-fluid{
     max-width: 1240px;
     margin: 80px auto;
+}
+
+
+// Colors
+.ws-color{
+    &__text{
+        &__yellow{
+            color: $sw-yellow;
+        }
+    }
 }

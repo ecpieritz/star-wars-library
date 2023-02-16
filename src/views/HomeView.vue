@@ -13,8 +13,6 @@
           <img src="@/assets/imgs/sw-home__history.jpg" alt="Star Wars poster">
         </div>
       </div>
-      <p></p>
-      <p></p>
     </div>
   </div>
 </template>
