@@ -1,7 +1,35 @@
 <template>
-  <div class="sw-species">
-    <h1>Species</h1>
-  </div>
+  <main class="sw-species">
+    <div class="container-fluid">
+      <h1>Species</h1>
+
+      <div class="row">
+        <section class="col-lg-7 sw-table">
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>Classification</th>
+              <th>Designation</th>
+            </thead>
+            <tbody>
+              <tr v-for="(i) in species" :key="i">
+                <td>{{i.name}}</td>
+                <td>{{i.classification}}</td>
+                <td>{{i.designation}}</td>
+              </tr>
+              
+            </tbody>
+
+          </table>
+        </section>
+
+        <aside class="col-lg-5 sw-chart">
+          charts
+        </aside>
+
+      </div>
+    </div>
+  </main>
 </template>
   
 <script>
@@ -9,15 +37,15 @@ import api from '@/services/api';
 import { ref, onMounted } from 'vue';
 
 export default {
-  name: 'FilmsView',
+  name: 'speciesView',
   setup() {
-    const films = ref([])
+    const species = ref([])
 
-    const fetchFilms = async () => api.get('/films?limit=20').then((response) => films.value = response.data.results)
+    const fetchSpecies = async () => api.get('/species?limit=20').then((response) => species.value = response.data.results)
 
-    onMounted(fetchFilms)
+    onMounted(fetchSpecies)
 
-    return { films }
+    return { species }
   }
 }
 </script>
@@ -25,7 +53,7 @@ export default {
 <style scoped lang="scss">
 @import '@/scss/main.scss';
 
-.sw-films {
+.sw-species {
   margin-top: 14vh;
   color: $sw-white;
 

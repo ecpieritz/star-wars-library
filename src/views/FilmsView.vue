@@ -1,7 +1,7 @@
 <template>
   <main class="sw-films">
     <div class="container-fluid">
-      <h1>People</h1>
+      <h1>Films</h1>
 
       <div class="row">
         <section class="col-lg-7 sw-table">
