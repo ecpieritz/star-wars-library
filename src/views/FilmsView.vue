@@ -1,7 +1,35 @@
 <template>
-    <div class="sw-films">
-      <h1>Films</h1>
+  <main class="sw-films">
+    <div class="container-fluid">
+      <h1>People</h1>
+
+      <div class="row">
+        <section class="col-lg-7 sw-table">
+          <table>
+            <thead>
+              <th>Title</th>
+              <th>Director</th>
+              <th>Release Date</th>
+            </thead>
+            <tbody>
+              <tr v-for="(i) in films" :key="i">
+                <td>{{i.title}}</td>
+                <td>{{i.director}}</td>
+                <td>{{i.release_date}}</td>
+              </tr>
+              
+            </tbody>
+
+          </table>
+        </section>
+
+        <aside class="col-lg-5 sw-chart">
+          charts
+        </aside>
+
+      </div>
     </div>
+  </main>
   </template>
   
   <script>
