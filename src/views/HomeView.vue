@@ -1,7 +1,7 @@
 <template>
-  <div class="sw-home">
+  <main class="sw-home">
     <HomeBanner />
-    <div class="container-fluid">
+    <section class="container-fluid">
       <h1>A long time ago in a galaxy far, far away...</h1>
   
       <div class="row">
@@ -13,8 +13,8 @@
           <img src="@/assets/imgs/sw-home__history.jpg" alt="Star Wars poster">
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script>
