@@ -1,28 +1,63 @@
 @import './variables';
 
-h1{
-    color: $sw-yellow;
-    font-weight: 900;
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 80px;
+h1 {
+  color: $sw-yellow;
+  font-weight: 900;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 80px;
 }
 
-p{
-    font-size: 20px;
+p {
+  font-size: 20px;
 }
 
-.container-fluid{
-    max-width: 1240px;
-    margin: 80px auto;
+.container-fluid {
+  max-width: 1240px;
+  margin: 80px auto;
 }
 
 
 // Colors
-.ws-color{
-    &__text{
-        &__yellow{
-            color: $sw-yellow;
-        }
+.ws-color {
+  &__text {
+    &__yellow {
+      color: $sw-yellow;
     }
+  }
+}
+
+// Table
+
+.sw-table {
+  table {
+    width: 100%;
+
+    thead {
+      background-color: $sw-red;
+      border: 1px solid $sw-red;
+      font-size: 25px;
+
+      th {
+        width: 25%;
+
+        &:first-child {
+          width: 50%;
+        }
+
+      }
+
+    }
+
+    tbody {
+      tr {
+        border: 1px solid $sw-white;
+        border-top: none;
+
+        td {
+          color: $sw-white;
+        }
+      }
+    }
+  }
 }
