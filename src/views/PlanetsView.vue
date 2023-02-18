@@ -1,7 +1,37 @@
 <template>
-    <div class="sw-planets">
+  <main class="sw-planets">
+    <div class="container-fluid">
       <h1>Planets</h1>
+
+      <div class="row">
+        <section class="col-lg-7 sw-table">
+          <table>
+            <thead>
+              <th>Name</th>
+              <th>Population</th>
+              <th>Diameter</th>
+              <th>Climate</th>
+            </thead>
+            <tbody>
+              <tr v-for="(i) in planets" :key="i">
+                <td>{{i.name}}</td>
+                <td>{{i.population}}</td>
+                <td>{{i.diameter}}</td>
+                <td>{{i.climate}}</td>
+              </tr>
+              
+            </tbody>
+
+          </table>
+        </section>
+
+        <aside class="col-lg-5 sw-chart">
+          charts
+        </aside>
+
+      </div>
     </div>
+  </main>
   </template>
   
   <script>
@@ -28,6 +58,13 @@
   .sw-planets{
     margin-top: 14vh;
     color: $sw-white;
+
+    th {
+      &:first-child {
+        width: 25%;
+      }
+
+    }
     @media(max-width:450px){
       margin-top: 19vh;
     }
