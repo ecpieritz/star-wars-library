@@ -24,7 +24,7 @@
         </section>
 
         <aside class="col-lg-5 sw-chart">
-          charts
+          <SpeciesChart />
         </aside>
 
       </div>
@@ -35,9 +35,11 @@
 <script>
 import api from '@/services/api';
 import { ref, onMounted } from 'vue';
+import SpeciesChart from '@/components/SpeciesChart.vue'
 
 export default {
   name: 'speciesView',
+  components: {SpeciesChart},
   setup() {
     const species = ref([])
 
