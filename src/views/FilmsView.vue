@@ -24,7 +24,7 @@
         </section>
 
         <aside class="col-lg-5 sw-chart">
-          charts
+          <FilmsChart />
         </aside>
 
       </div>
@@ -35,9 +35,11 @@
   <script>
 import api from '@/services/api';
 import {ref, onMounted} from 'vue';
+import FilmsChart from '@/components/FilmsChart.vue';
 
 export default {
   name: 'FilmsView',
+  components:{FilmsChart},
   setup(){
     const films = ref([])
 

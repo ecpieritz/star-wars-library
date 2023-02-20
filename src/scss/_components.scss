@@ -28,7 +28,6 @@ p {
 }
 
 // Table
-
 .sw-table {
   table {
     width: 100%;
@@ -60,4 +59,10 @@ p {
       }
     }
   }
+}
+
+// Charts
+.sw-chart{
+  background-color: $sw-white;
+  padding: 20px;
 }

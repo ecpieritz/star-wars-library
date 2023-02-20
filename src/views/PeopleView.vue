@@ -67,10 +67,4 @@ export default {
     margin-top: 19vh;
   }
 }
-
-.sw-chart{
-  background-color: $sw-white;
-  padding: 20px;
-}
-
 </style>
