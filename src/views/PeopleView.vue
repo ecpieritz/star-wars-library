@@ -24,7 +24,7 @@
         </section>
 
         <aside class="col-lg-5 sw-chart">
-          charts
+          <PeopleChart />
         </aside>
 
       </div>
@@ -35,10 +35,11 @@
 <script>
 import api from '@/services/api';
 import { ref, onMounted } from 'vue';
+import PeopleChart from '@/components/PeopleChart.vue'
 
 export default {
   name: 'PeopleView',
-  components: {},
+  components: {PeopleChart},
   setup() {
     const people = ref([])
 
@@ -48,8 +49,10 @@ export default {
 
     onMounted(fetchPeople)
 
+    
+
     return { people }
-  }
+  },
 }
 </script>
 
@@ -63,6 +66,11 @@ export default {
   @media(max-width:450px) {
     margin-top: 19vh;
   }
+}
+
+.sw-chart{
+  background-color: $sw-white;
+  padding: 20px;
 }
 
 </style>
